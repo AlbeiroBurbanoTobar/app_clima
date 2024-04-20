@@ -1,0 +1,63 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco para contraste */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+button {
+  padding: 10px;
+  border: 1px solid #555; /* Borde más claro para los inputs en fondo oscuro */
+  background-color: #222; /* Fondo oscuro para los inputs */
+  color: #fff; /* Texto blanco para los inputs */
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  max-width: 300px; /* O un ancho que prefieras */
+  margin-top: 20px;
+  width: 300px;
+  font-size: 15px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #555; /* Botón ligeramente más claro */
+}
+
+button:hover {
+  background-color: #777; /* Botón más claro al pasar el mouse */
+}
+
+.weather-card {
+  width: 100%;
+  max-width: 350px; /* Ancho máximo para la tarjeta */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #222; /* Fondo oscuro para la tarjeta */
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2); /* Sombra suave para destacar la tarjeta */
+}
+
+.weather-card h1,
+.weather-card p {
+  margin: 10px 0; /* Espaciado vertical para los elementos */
+}
+

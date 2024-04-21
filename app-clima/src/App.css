@@ -39,11 +39,11 @@ input[type="text"] {
 
 button {
   cursor: pointer;
-  background-color: #555; /* Botón ligeramente más claro */
+  background-color: #000000; /* Botón ligeramente más claro */
 }
 
 button:hover {
-  background-color: #777; /* Botón más claro al pasar el mouse */
+  background-color: #323232; /* Botón más claro al pasar el mouse */
 }
 
 .weather-card {
@@ -69,4 +69,46 @@ button:hover {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
+}
+
+
+.background {
+  background-image: url('../public/fondo.png'); 
+  height: 100vh; /* Ocupa todo el alto de la vista */
+  width: 100vw; /* Ocupa todo el ancho de la vista */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor sin perder proporciones */
+  
+}
+
+.app-logo {
+  width: 200px; /* Ajusta el tamaño según necesites */
+
+
+
+}
+.logo-container {
+  display: flex;
+  justify-content: center; /* Alinea horizontalmente */
+  align-items: center; /* Alinea verticalmente si es necesario */
+ 
+}
+
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px; /* O el espacio que necesita */
+  font-size: 0.8em; /* Ajusta esto según tus preferencias */
+  color: #000000;
+}
+
+.app-footer a {
+  margin: 0 10px;
+  /*color: #ff4d4d; /* Cambia el color */
+  text-decoration: blink; /* O como prefieras */
+}
+
+.app-footer a:hover {
+  text-decoration: underline; /* Efecto al pasar el mouse para indicar que es un enlace */
 }

@@ -3,6 +3,7 @@ import axios from 'axios';
 import WeatherCard from './componets/WeatherCard';
 import SearchBar from './componets/SearchBar';
 import './App.css';
+import Logo from './logoclima.png'
 
 function App() {
   const [weatherData, setWeatherData] = useState(null);
@@ -41,6 +42,10 @@ function App() {
   };
 
   return (
+    <div className="background">
+    <div className="logo-container">
+    <img src={Logo} alt="Logo" className="app-logo" />
+    
     <div className="App">
       <SearchBar onSearch={handleSearch} />
       {error && <p className="error-message">{error}</p>} 
@@ -56,6 +61,15 @@ function App() {
       windDirection={weatherData.wind.deg}
         />
       )}
+      <footer className="app-footer">
+        <p>Creado por Albeiro Burbano - Encuéntrame  en:</p>
+        <a href="https://www.freelancer.com/u/Albeiro73?sb=t" target="_blank" rel="noopener noreferrer">Freelancer</a> | 
+        <a href="http://www.linkedin.com/in/albeiro-jose-burbano-tobar-759ba4297" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+        <a href="https://github.com/AlbeiroBurbanoTobar/ppi_pl_BurbanoA" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+        <a href="https://stackoverflow.com/users/24090991/albeiro-burbano" target="_blank" rel="noopener noreferrer">Stack Overflow</a>
+      </footer>
+    </div>
+    </div>
     </div>
   );
 }

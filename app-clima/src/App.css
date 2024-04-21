@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #000; /* Fondo negro */
+  background-color: #d0d0d0; /* Fondo negro */
   color: #fff; /* Texto blanco para contraste */
 }
 
@@ -16,7 +16,7 @@ body, html {
 }
 
 form {
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
 input[type="text"],
@@ -26,7 +26,7 @@ button {
   background-color: #222; /* Fondo oscuro para los inputs */
   color: #fff; /* Texto blanco para los inputs */
   margin-right: 5px;
-  border-radius: 4px;
+  border-radius: 12px;
 }
 
 input[type="text"] {
@@ -61,3 +61,12 @@ button:hover {
   margin: 10px 0; /* Espaciado vertical para los elementos */
 }
 
+.error-message {
+  color: #ff4d4d; /* Rojo más oscuro */
+  background-color: #000000; /* Fondo rojo claro */
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}

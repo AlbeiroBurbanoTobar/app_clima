@@ -31,7 +31,7 @@ function App() {
         } else if (err.request) {
           // La solicitud fue hecha pero no se recibió respuesta
           console.error("Error request", err.request);
-          setError("Error: The request was made but no response was received");
+          setError("Error: La solicitud fue hecha pero no se recibió respuesta");
         } else {
           // Algo sucedió al configurar la solicitud que desencadenó un error
           console.error("Error message", err.message);

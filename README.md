@@ -2,7 +2,7 @@
 
 ClimaAhora es una aplicación web desarrollada para proporcionar información actualizada del clima de cualquier ciudad del mundo. Utiliza una interfaz sencilla y una potente API de clima para entregar pronósticos precisos y detallados.
 
-La API es pertenece a OpenWeatherMap, para mayor informacion [visita su sitio web](https://openweathermap.org).
+La API le pertenece a OpenWeatherMap, para mayor informacion [visita su sitio web](https://openweathermap.org).
 
 ## Descripción
 
